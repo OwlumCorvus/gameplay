@@ -14,4 +14,5 @@ vim.opt.smartindent = true (for sql and python), vim.opt.shiftwidth = 4 (tab ide
 nvim +Tutor (nvim tutorial)  
 colab: github/settings/devsettings/tokens !git clone https://{token}@github.com/{username}/{reponame}.git  
 "!" is for terminal commands !apt install postgresql  
-mount drive for db keeping.
+mount drive for db keeping.  
+postgresql+termux: [start/stop server] pg_ctl -D $PREFIX/var/lib/postgresql start/stop, [logon to postgre prompt] psql postgres, [specific db & specific user] psql -U username -d database_name, [slash commands in psql prompt] \l list all databases on server, \c database_name connect/switch databases, \conninfo show current uset and database, \dt list tables, \d list all, \d table_name show table metainfo, \du list all database users and perms, \x make view vertical, \timing toggles exe stopwatch for quiers, \i filename.sql import and execute extetnal sql file, \? common help command, \h COMMAND sytanx help, \q quit back to termux, [backup and move data] pg_dump -U username -d database_name > file_name.sql, psql -U cloud_user -d new_database < file_name.sql, 
