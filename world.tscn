@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://ckavqb25bdaul"]
+
+[ext_resource type="PackedScene" uid="uid://ckudr8chj1kgo" path="res://player.tscn" id="1_fj7yv"]
+[ext_resource type="PackedScene" uid="uid://6mo7lrqbphwj" path="res://rock.tscn" id="2_tlwt5"]
+[ext_resource type="PackedScene" uid="uid://bp1ojfia5c1jm" path="res://inventory_slot.tscn" id="3_tlwt5"]
+
+[node name="World" type="Node2D" unique_id=373654613]
+
+[node name="Player" parent="." unique_id=604755430 instance=ExtResource("1_fj7yv")]
+position = Vector2(363, 177)
+
+[node name="Rock" parent="." unique_id=1396943544 instance=ExtResource("2_tlwt5")]
+position = Vector2(378, 695)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1985680189]
+
+[node name="InventorySlot" parent="CanvasLayer" unique_id=2129887971 instance=ExtResource("3_tlwt5")]
+offset_left = 34.0
+offset_top = 28.0
+offset_right = 88.0
+offset_bottom = 68.0

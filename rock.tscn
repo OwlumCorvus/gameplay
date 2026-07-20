@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://6mo7lrqbphwj"]
+
+[ext_resource type="Script" uid="uid://dw4fnsfstvhiw" path="res://rock.gd" id="1_o0qsl"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_sg5c8"]
+size = Vector2(130, 130)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sg5c8"]
+size = Vector2(140, 140)
+
+[node name="Rock" type="Area2D" unique_id=1396943544]
+script = ExtResource("1_o0qsl")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1758160049]
+texture = SubResource("PlaceholderTexture2D_sg5c8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1234946646]
+shape = SubResource("RectangleShape2D_sg5c8")
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=1578136422]
+offset_left = -60.0
+offset_top = -120.0
+offset_right = 65.0
+offset_bottom = -88.0
+max_value = 3.0
+show_percentage = false
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

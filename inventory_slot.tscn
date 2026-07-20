@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://bp1ojfia5c1jm"]
+
+[ext_resource type="Script" uid="uid://pl5vl5jsfg1d" path="res://inventory_slot.gd" id="1_42eed"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_sg5c8"]
+
+[node name="InventorySlot" type="PanelContainer" unique_id=2129887971]
+offset_right = 40.0
+offset_bottom = 40.0
+tooltip_text = "Stone: Used for crafting."
+script = ExtResource("1_42eed")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=522897351]
+layout_mode = 2
+
+[node name="ItemIcon" type="TextureRect" parent="HBoxContainer" unique_id=527131077]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture = SubResource("PlaceholderTexture2D_sg5c8")
+expand_mode = 1
+
+[node name="QtyLabel" type="Label" parent="HBoxContainer" unique_id=961500261]
+layout_mode = 2
+text = "x0"

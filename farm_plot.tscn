@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://ckyykwcmrv7ld"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_sg5c8"]
+size = Vector2(100, 100)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sg5c8"]
+size = Vector2(105, 105)
+
+[node name="FarmPlot" type="Area2D" unique_id=1487809302]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=692669903]
+texture = SubResource("PlaceholderTexture2D_sg5c8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1219189984]
+shape = SubResource("RectangleShape2D_sg5c8")
